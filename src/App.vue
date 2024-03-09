@@ -1,11 +1,16 @@
 <template>
-  <main>
-    <h1 class="text-green-400">hi</h1>
-  </main>
+  <main><app-header></app-header>></main>
 </template>
 
 <script>
-export default {};
+import AppHeader from "@/components/AppHeader.vue";
+
+export default {
+  name: "app",
+  components: {
+    AppHeader,
+  },
+};
 </script>
 
 <style scoped></style>
