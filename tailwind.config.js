@@ -4,6 +4,9 @@ export default {
 
   theme: {
     extend: {
+      colors: {
+        lighting: "#00fbd5",
+      },
       boxShadow: {
         around: "0 0 10px 10px rgba(0, 0, 0, 0.1)",
       },

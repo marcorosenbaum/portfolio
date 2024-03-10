@@ -3,10 +3,10 @@
     <div
       @mouseover="show_about_text = true"
       @mouseleave="show_about_text = false"
-      class="flex justify-center rounded-3xl hover:text-green-300 stroke-shadow"
+      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <user-icon size="30" class="" />
-      <span v-show="show_about_text" class="text-green-300 absolute top-8"
+      <user-icon size="20" class="" />
+      <span v-show="show_about_text" class="text-lightning absolute top-6"
         >About</span
       >
     </div>
@@ -14,28 +14,28 @@
     <div
       @mouseover="show_skills_text = true"
       @mouseleave="show_skills_text = false"
-      class="flex justify-center rounded-3xl hover:text-green-300 stroke-shadow"
+      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <lightbulb-icon size="30" />
-      <span v-show="show_skills_text" class="absolute top-8">Skills</span>
+      <lightbulb-icon size="20" />
+      <span v-show="show_skills_text" class="absolute top-6">Skills</span>
     </div>
 
     <div
       @mouseover="show_work_text = true"
       @mouseleave="show_work_text = false"
-      class="flex justify-center rounded-3xl hover:text-green-300 stroke-shadow"
+      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <notebook-pen-icon size="30" />
-      <span v-show="show_work_text" class="absolute top-8">Work</span>
+      <notebook-pen-icon size="20" />
+      <span v-show="show_work_text" class="absolute top-6">Work</span>
     </div>
 
     <div
       @mouseover="show_experience_text = true"
       @mouseleave="show_experience_text = false"
-      class="flex justify-center rounded-3xl hover:text-green-300 stroke-shadow"
+      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <briefcase-icon size="30" />
-      <span v-show="show_experience_text" class="absolute top-8"
+      <briefcase-icon size="20" />
+      <span v-show="show_experience_text" class="absolute top-6"
         >Experience</span
       >
     </div>
@@ -43,19 +43,19 @@
     <div
       @mouseover="show_education_text = true"
       @mouseleave="show_education_text = false"
-      class="flex justify-center rounded-3xl hover:text-green-300 stroke-shadow"
+      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <graduation-cap-icon size="30" />
-      <span v-show="show_education_text" class="absolute top-8">Education</span>
+      <graduation-cap-icon size="20" />
+      <span v-show="show_education_text" class="absolute top-6">Education</span>
     </div>
 
     <div
       @mouseover="show_contact_text = true"
       @mouseleave="show_contact_text = false"
-      class="flex justify-center rounded-3xl hover:text-green-300 stroke-shadow"
+      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <mail-icon size="30" />
-      <span v-show="show_contact_text" class="absolute top-8">Contact</span>
+      <mail-icon size="20" />
+      <span v-show="show_contact_text" class="absolute top-6">Contact</span>
     </div>
   </div>
 </template>
@@ -91,8 +91,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.stroke-shadow:hover {
-  filter: drop-shadow(0px 0px 3px rgb(148, 255, 66));
-}
-</style>
+<style></style>
