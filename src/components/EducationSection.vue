@@ -1,38 +1,37 @@
 <template>
   <section id="experience">
-    <h1 class="heading z-50 text-7xl mt-8">Experience</h1>
+    <h1 class="heading z-50 text-7xl mt-8">Education</h1>
 
     <div class="flex flex-col gap-4 mt-8">
       <div
-        v-on:click="
-          (teamLeadEgtsIsOpen = false),
-            (futureIsOpen = !futureIsOpen),
-            (travelIsOpen = false)
-        "
+        v-on:click="(iquandoIsOpen = false), (codingIsOpen = !codingIsOpen)"
         class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 hover:shadow-lighting cursor-pointer flex justify-between py-4 bg-background"
       >
-        <div class="flex w-full justify-between px-8 text-xl">
-          <span class="w-2/5">Team leader - Installation</span>
+        <div class="flex w-full px-8 text-xl">
+          <span class="w-[40%]">Coding Bootcamp</span>
 
-          <span class="w-2/5">@ Future Energy, New Zealand</span>
-          <span class="w-1/5 text-right">2022</span>
+          <span class="w-2/5">@ Coding Bootcamps Europe, remote</span>
+          <span class="w-1/5 text-right">2023</span>
         </div>
         <div
           class="text-2xl px-8 transition-transform hover:scale-150 duration-300 cursor-pointer"
-          v-text="futureIsOpen ? '-' : '+'"
+          v-text="codingIsOpen ? '-' : '+'"
         ></div>
       </div>
-
-      <div v-if="futureIsOpen" class="flex border border-white-2">
-        <div class="flex flex-wrap gap-4 w-4/5 p-4">
-          <p>• Supervising employees on site</p>
-          <p>• Installation of commercial and residential solar PV systems</p>
-          <p>
-            • Installation of energy usage and solar generation monitoring
-            equipment
-          </p>
-          <p>• Debugging of electronic systems</p>
-          <p>• Site inspections</p>
+      <div v-if="codingIsOpen" class="flex border border-white-2">
+        <div class="w-4/5 p-4">
+          <p>During this course I learned the basics of web-development.</p>
+          <div class="flex flex-wrap gap-4 w-[80%] p-4">
+            <p>• HTML</p>
+            <p>• CSS</p>
+            <p>• Responsive design</p>
+            <p>• JavaScript</p>
+            <p>• Vue</p>
+            <p>• Pinia</p>
+            <p>• Implementation of testing (cypress, jest)</p>
+            <p>• Node</p>
+            <p>• Git</p>
+          </div>
         </div>
 
         <div class="w-1/5 justify-center my-auto">
@@ -52,7 +51,7 @@
             <a
               class="pl-4 transition-transform hover:scale-110 duration-300"
               target="_blank"
-              href="https://www.future-energy.co.nz/"
+              href="https://www.coding-bootcamps.eu/webentwickler-werden-bildungsgutschein/?utm_source=google&utm_medium=cpc&utm_campaign=17147411238&utm_term=online%20coding%20bootcamp&matchtype=p&device=c&gad_source=1&gclid=CjwKCAiA-P-rBhBEEiwAQEXhHzhOcFneeL2PLi0wO9wjSqBL1V6K-omSe5awQUTd7UqO48xUuj9szRoCcpcQAvD_BwE"
               >Website</a
             >
           </div>
@@ -60,71 +59,33 @@
       </div>
 
       <div
-        v-on:click="
-          (teamLeadEgtsIsOpen = false),
-            (futureIsOpen = false),
-            (travelIsOpen = !travelIsOpen)
-        "
+        v-on:click="(iquandoIsOpen = !iquandoIsOpen), (codingIsOpen = false)"
         class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 hover:shadow-lighting cursor-pointer flex justify-between py-4 bg-background"
       >
         <div class="flex w-full justify-between px-8 text-xl">
-          <span class="w-2/5">Travel</span>
-          <span class="w-2/5">@ planet earth</span>
-          <span class="w-1/5 text-right">2021 - 2023</span>
+          <span class="w-2/5">State certified technical engineer</span>
+          <span class="w-2/5">@ IQuando GmbH, Germany</span>
+          <span class="w-1/5 text-right">2018 - 2020</span>
         </div>
         <div
           class="text-2xl px-8 transition-transform hover:scale-150 duration-300 cursor-pointer"
-          v-text="travelIsOpen ? '-' : '+'"
+          v-text="iquandoIsOpen ? '-' : '+'"
         ></div>
       </div>
-      <div v-if="travelIsOpen" class="p-4 flex flex-col border border-white-2">
-        <p>
-          During this time I developed a great sense to organize myself in
-          stressful situations and increased my capability to communicate
-          fluently in english. The opportunity to live and work in New Zealand
-          was a very insightful and knowledgable experience.
-        </p>
-        <div>
-          <p class="mt-4">Countries I visited:</p>
-          <div class="flex flex-wrap gap-4">
-            <p>• Belgium</p>
-            <p>• France</p>
-            <p>• Spain</p>
-            <p>• Indonesia</p>
-            <p>• Australia</p>
-            <p>• New Zealand</p>
-            <p>• Rarotonga</p>
-            <p>• Thailand</p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        v-on:click="
-          (teamLeadEgtsIsOpen = !teamLeadEgtsIsOpen),
-            (futureIsOpen = false),
-            (travelIsOpen = false)
-        "
-        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 hover:shadow-lighting cursor-pointer flex justify-between py-4 bg-background"
-      >
-        <div class="flex w-full justify-between px-8 text-xl">
-          <span class="w-2/5">Team leader, technician</span>
-          <span class="w-2/5">@ Eurogate Technical Services GmbH, Germany</span>
-          <span class="w-1/5 text-right">2012 - 2021</span>
-        </div>
-        <div
-          class="text-2xl px-8 transition-transform hover:scale-150 duration-300 cursor-pointer"
-          v-text="teamLeadEgtsIsOpen ? '-' : '+'"
-        ></div>
-      </div>
-      <div v-if="teamLeadEgtsIsOpen" class="flex border border-white-2">
+      <div v-if="iquandoIsOpen" class="flex border border-white-2">
         <div class="flex flex-wrap gap-4 w-4/5 p-4">
-          <p>• Supervising employees in different projects</p>
-          <p>• Debugging of equipment during operation</p>
-          <p>• Execution of maintenance and repairs</p>
-          <p>• Analysing systems and equipment and planning upgrades</p>
-          <p>• Monitoring costs and appointments in projects</p>
+          <p>• Project management</p>
+          <p>• Initiate and implement suitable quality-assurance measures</p>
+          <p>• Market- and customer-oriented completion of management tasks</p>
+          <p>
+            • Demonstrate ethical, economic and ecological awareness within the
+            context of sustainable development
+          </p>
+          <p>
+            • Market and customer oriented implementation of new technologies
+          </p>
         </div>
+
         <div class="w-1/5 justify-center my-auto">
           <div class="flex gap-2">
             <svg
@@ -142,7 +103,7 @@
             <a
               class="pl-4 transition-transform hover:scale-110 duration-300"
               target="_blank"
-              href="https://www1.eurogate.de/Ueber-uns"
+              href="https://iquando.de/"
               >Website</a
             >
           </div>
@@ -154,21 +115,19 @@
 
 <script>
 export default {
-  name: "ExperienceSection",
+  name: "EducationSection",
   data() {
     return {
-      futureIsOpen: false,
-      travelIsOpen: false,
+      codingIsOpen: false,
 
-      teamLeadEgtsIsOpen: false,
+      iquandoIsOpen: false,
     };
   },
   methods: {
     unfoldAllExperiences() {
-      this.futureIsOpen = false;
-      this.travelIsOpen = false;
+      this.codingIsOpen = false;
 
-      this.teamLeadEgtsIsOpen = false;
+      this.iquandoIsOpen = false;
     },
   },
 };

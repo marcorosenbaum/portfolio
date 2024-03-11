@@ -10,6 +10,9 @@ export default {
       boxShadow: {
         around: "0 0 10px 10px rgba(0, 0, 0, 0.1)",
       },
+      boxShadow: {
+        around2: "0 0 50px 0.01px rgba(0, 0, 0)",
+      },
       borderRadius: {
         fully: "10rem",
       },
