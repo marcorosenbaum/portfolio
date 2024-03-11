@@ -11,7 +11,7 @@ export default {
         around: "0 0 10px 10px rgba(0, 0, 0, 0.1)",
       },
       boxShadow: {
-        around2: "0 0 50px 0.01px rgba(0, 0, 0)",
+        around2: "0 0 50px 20px rgb(0, 251, 213, 0.3)",
       },
       borderRadius: {
         fully: "10rem",

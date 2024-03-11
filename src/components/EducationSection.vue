@@ -5,7 +5,7 @@
     <div class="flex flex-col gap-4 mt-8">
       <div
         v-on:click="(iquandoIsOpen = false), (codingIsOpen = !codingIsOpen)"
-        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 hover:shadow-lighting cursor-pointer flex justify-between py-4 bg-background"
+        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-background"
       >
         <div class="flex w-full px-8 text-xl">
           <span class="w-[40%]">Coding Bootcamp</span>
@@ -60,7 +60,7 @@
 
       <div
         v-on:click="(iquandoIsOpen = !iquandoIsOpen), (codingIsOpen = false)"
-        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 hover:shadow-lighting cursor-pointer flex justify-between py-4 bg-background"
+        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-background"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">State certified technical engineer</span>
