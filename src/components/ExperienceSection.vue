@@ -9,7 +9,7 @@
             (futureIsOpen = !futureIsOpen),
             (travelIsOpen = false)
         "
-        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-background"
+        class="rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">Team leader - Installation</span>
@@ -65,7 +65,7 @@
             (futureIsOpen = false),
             (travelIsOpen = !travelIsOpen)
         "
-        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-background"
+        class="rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">Travel</span>
@@ -105,7 +105,7 @@
             (futureIsOpen = false),
             (travelIsOpen = false)
         "
-        class="bg-gray-950 rounded-fully border-2 border-gray-950 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-background"
+        class="bg-dark-gray rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">Team leader, technician</span>
