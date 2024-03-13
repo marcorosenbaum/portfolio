@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-16 mt-16">
+  <section id="work-section" class="mx-16 mt-32">
     <h1>My work</h1>
 
     <div class="mt-16">
@@ -15,7 +15,8 @@
           />
         </div>
       </div>
-      <p class="mt-16">
+      <h2 class="mt-16">Flashcards</h2>
+      <p class="mt-8">
         A simple Flashcard website, where you can save flashcards. A chart
         displays the amount of created cards as a visual representation of all
         the knowledge you've accumulated.
@@ -83,7 +84,7 @@
         </div>
       </div>
 
-      <div class="flex gap-8">
+      <!-- <div class="flex gap-8 mt-16">
         <img
           id="node-icon"
           src="@/assets/svgs/nodejs.svg"
@@ -133,12 +134,13 @@
           alt="css icon"
           width="80"
         />
-      </div>
+      </div> -->
     </div>
 
-    <div class="flex justify-between gap-20 mt-16">
+    <div class="flex gap-20 mt-32">
       <div>
-        <p>
+        <h2>Concert Compass</h2>
+        <p class="mt-8">
           The final project I worked on at Coding-Bootcamps-Europe. Concert
           compass is an app to track concerts. It works with the ticketmaster
           api and pinia to store selected concerts in the localstorage.
@@ -208,20 +210,25 @@
         </div>
       </div>
 
-      <div class="relative inline-block">
-        <img src="@/assets/images/iphone.png" alt="iphone image" />
+      <div class="relative inline-block max-w-[300px]">
+        <img
+          src="@/assets/images/iphone.png"
+          alt="iphone image"
+          class="w-full"
+        />
         <!-- Values are calculated manually by the aspect ratio of the image -->
         <div
           class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] overflow-auto cursor-pointer"
         >
           <img
             src="@/assets/images/cbe-detail-full.png"
-            alt="flashcard website image"
+            alt="concert compass website image"
+            class="w-full"
           />
         </div>
       </div>
     </div>
-    <div class="flex gap-8 flex-wrap mt-16">
+    <!-- <div class="flex gap-8 flex-wrap mt-16">
       <img
         id="node-icon"
         src="@/assets/svgs/nodejs.svg"
@@ -255,29 +262,26 @@
         src="@/assets/svgs/css3.svg"
         alt="css icon"
         class="w-16"
-      /><img
+      />
+      <img
         id="html5-icon"
         src="@/assets/svgs/html5.svg"
         alt="css icon"
         class="w-16"
-      /><img
+      />
+      <img
         id="javascript-icon"
         src="@/assets/svgs/javascript.svg"
         alt="css icon"
         class="w-16"
       />
-    </div>
+    </div> -->
   </section>
 </template>
 
 <script>
 export default {
   name: "WorkSection",
-  data() {
-    return {
-      iphone_image_url: "@/assets/images/cbe-search.png",
-    };
-  },
 };
 </script>
 

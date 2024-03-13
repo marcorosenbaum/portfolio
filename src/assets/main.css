@@ -29,3 +29,8 @@ h1 {
   font-weight: 400;
   line-height: normal;
 }
+
+h2 {
+  color: rgb(0, 251, 213);
+  font-size: 2rem;
+}

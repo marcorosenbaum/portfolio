@@ -1,6 +1,6 @@
 <template>
-  <section id="experience" class="px-16 h-[100vh] education-section">
-    <h1 class="heading z-50 pt-16">Education</h1>
+  <section id="education-section" class="px-16 h-[100vh]">
+    <h1 class="heading z-50 pt-32">Education</h1>
 
     <div class="flex flex-col gap-12 mt-16">
       <div
@@ -134,7 +134,7 @@ export default {
 </script>
 
 <style scoped>
-.education-section {
+#education-section {
   background-image: url("@/assets/images/background-pattern.png");
   background-size: cover;
 }

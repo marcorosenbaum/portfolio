@@ -5,14 +5,16 @@
       @mouseleave="show_about_text = false"
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <user-icon id="user-icon" size="36" />
+      <a href="#about-section">
+        <user-icon id="user-icon" size="36" />
 
-      <label
-        for="user-icon"
-        v-show="show_about_text"
-        class="text-lightning absolute top-10"
-        >About</label
-      >
+        <label
+          for="user-icon"
+          v-show="show_about_text"
+          class="text-lightning absolute top-10"
+          >About</label
+        >
+      </a>
     </div>
 
     <!-- <div
@@ -34,12 +36,14 @@
       @mouseleave="show_work_text = false"
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <notebook-pen-icon id="notebook-pen-icon" size="36" />
-      <label
-        for="notebook-pen-icon"
-        v-show="show_work_text"
-        class="absolute top-10"
-        >Work</label
+      <a href="#work-section">
+        <notebook-pen-icon id="notebook-pen-icon" size="36" />
+        <label
+          for="notebook-pen-icon"
+          v-show="show_work_text"
+          class="absolute top-10"
+          >Work</label
+        ></a
       >
     </div>
 
@@ -48,12 +52,14 @@
       @mouseleave="show_experience_text = false"
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <briefcase-icon id="briefcase-icon" size="36" />
-      <label
-        for="briefcase-icon"
-        v-show="show_experience_text"
-        class="absolute top-10"
-        >Experience</label
+      <a href="#experience-section">
+        <briefcase-icon id="briefcase-icon" size="36" />
+        <label
+          for="briefcase-icon"
+          v-show="show_experience_text"
+          class="absolute top-10"
+          >Experience</label
+        ></a
       >
     </div>
 
@@ -62,12 +68,14 @@
       @mouseleave="show_education_text = false"
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <graduation-cap-icon id="graduation-cap-icon" size="36" />
-      <label
-        for="graduation-cap-icon"
-        v-show="show_education_text"
-        class="absolute top-10"
-        >Education</label
+      <a href="#education-section">
+        <graduation-cap-icon id="graduation-cap-icon" size="36" />
+        <label
+          for="graduation-cap-icon"
+          v-show="show_education_text"
+          class="absolute top-10"
+          >Education</label
+        ></a
       >
     </div>
 
@@ -76,9 +84,14 @@
       @mouseleave="show_contact_text = false"
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
-      <mail-icon id="mail-icon" size="36" />
-      <label for="mail-icon" v-show="show_contact_text" class="absolute top-10"
-        >Contact</label
+      <a href="#contact-section">
+        <mail-icon id="mail-icon" size="36" />
+        <label
+          for="mail-icon"
+          v-show="show_contact_text"
+          class="absolute top-10"
+          >Contact</label
+        ></a
       >
     </div>
   </div>

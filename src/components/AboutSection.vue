@@ -1,5 +1,5 @@
 <template>
-  <section class="about-section">
+  <section id="about-section">
     <div class="grid grid-cols-2 gap-[8rem] mx-16 h-[100vh]">
       <div class="pt-32">
         <h1 class="">About me</h1>
@@ -108,7 +108,7 @@ export default {
 </script>
 
 <style scoped>
-.about-section {
+#about-section {
   background-image: url("@/assets/images/background-pattern.png");
   background-size: cover;
 }
