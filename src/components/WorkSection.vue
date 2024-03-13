@@ -40,9 +40,60 @@
           >Website</a
         >
       </div>
+      <div class="flex gap-8">
+        <img
+          id="node-icon"
+          src="@/assets/svgs/nodejs.svg"
+          alt="node icon"
+          width="80"
+        />
+
+        <img
+          id="pinia-icon"
+          src="@/assets/svgs/pinia.svg"
+          alt="pinia icon"
+          height="80px"
+        />
+
+        <img
+          id="tailwind-icon"
+          src="@/assets/svgs/tailwind.svg"
+          alt="css icon"
+          width="80"
+        />
+
+        <img
+          id="vue-icon"
+          src="@/assets/svgs/vue.svg"
+          alt="vue icon"
+          width="80"
+        />
+
+        <img
+          id="css-icon"
+          src="@/assets/svgs/css3.svg"
+          alt="css icon"
+          width="80"
+        /><img
+          id="firebase-icon"
+          src="@/assets/svgs/firebase.svg"
+          alt="css icon"
+          width="80"
+        /><img
+          id="html5-icon"
+          src="@/assets/svgs/html5.svg"
+          alt="css icon"
+          width="80"
+        /><img
+          id="javascript-icon"
+          src="@/assets/svgs/javascript.svg"
+          alt="css icon"
+          width="80"
+        />
+      </div>
     </div>
-    concert compass
-    <div></div>
+
+    <div>concert compass</div>
   </section>
 </template>
 
