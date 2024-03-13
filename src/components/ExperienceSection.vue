@@ -1,15 +1,15 @@
 <template>
-  <section id="experience">
-    <h1 class="heading z-50 text-7xl mt-8">Experience</h1>
+  <section id="experience" class="px-16 experience-section">
+    <h1 class="heading z-50 pt-16">Experience</h1>
 
-    <div class="flex flex-col gap-4 mt-8">
+    <div class="flex flex-col gap-12 mt-16">
       <div
         v-on:click="
           (teamLeadEgtsIsOpen = false),
             (futureIsOpen = !futureIsOpen),
             (travelIsOpen = false)
         "
-        class="rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
+        class="rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">Team leader - Installation</span>
@@ -35,7 +35,7 @@
           <p>• Site inspections</p>
         </div>
 
-        <div class="w-1/5 justify-center my-auto">
+        <div class="w-1/5 justify-center my-auto stroke-shadow">
           <div class="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@
               />
             </svg>
             <a
-              class="pl-4 transition-transform hover:scale-110 duration-300"
+              class="pl-4"
               target="_blank"
               href="https://www.future-energy.co.nz/"
               >Website</a
@@ -65,7 +65,7 @@
             (futureIsOpen = false),
             (travelIsOpen = !travelIsOpen)
         "
-        class="rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
+        class="rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">Travel</span>
@@ -105,11 +105,11 @@
             (futureIsOpen = false),
             (travelIsOpen = false)
         "
-        class="bg-dark-gray rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
+        class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">Team leader, technician</span>
-          <span class="w-2/5">@ Eurogate Technical Services GmbH, Germany</span>
+          <span class="w-2/5">@ Eurogate, Germany</span>
           <span class="w-1/5 text-right">2012 - 2021</span>
         </div>
         <div
@@ -125,7 +125,7 @@
           <p>• Analysing systems and equipment and planning upgrades</p>
           <p>• Monitoring costs and appointments in projects</p>
         </div>
-        <div class="w-1/5 justify-center my-auto">
+        <div class="w-1/5 justify-center my-auto stroke-shadow">
           <div class="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@
               />
             </svg>
             <a
-              class="pl-4 transition-transform hover:scale-110 duration-300"
+              class="pl-4"
               target="_blank"
               href="https://www1.eurogate.de/Ueber-uns"
               >Website</a
@@ -174,4 +174,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.experience-section {
+  background-image: url("@/assets/images/background-pattern.png");
+  background-size: cover;
+}
+</style>

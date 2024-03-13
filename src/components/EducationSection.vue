@@ -1,11 +1,11 @@
 <template>
-  <section id="experience">
-    <h1 class="heading z-50 text-7xl mt-8">Education</h1>
+  <section id="experience" class="px-16 h-[100vh] education-section">
+    <h1 class="heading z-50 pt-16">Education</h1>
 
-    <div class="flex flex-col gap-4 mt-8">
+    <div class="flex flex-col gap-12 mt-16">
       <div
         v-on:click="(iquandoIsOpen = false), (codingIsOpen = !codingIsOpen)"
-        class="bg-dark-gray rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
+        class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full px-8 text-xl">
           <span class="w-[40%]">Coding Bootcamp</span>
@@ -60,7 +60,7 @@
 
       <div
         v-on:click="(iquandoIsOpen = !iquandoIsOpen), (codingIsOpen = false)"
-        class="bg-dark-gray rounded-fully border-2 border-dark-gray hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
+        class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full justify-between px-8 text-xl">
           <span class="w-2/5">State certified technical engineer</span>
@@ -133,4 +133,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.education-section {
+  background-image: url("@/assets/images/background-pattern.png");
+  background-size: cover;
+}
+</style>

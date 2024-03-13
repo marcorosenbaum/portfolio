@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         lighting: "#00fbd5",
-        "dark-gray": "#171B20",
+        "dark-gray": "rgb(23, 27, 32, .5)",
       },
       boxShadow: {
         around: "0 0 10px 10px rgba(0, 0, 0, 0.1)",
