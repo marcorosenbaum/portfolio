@@ -85,7 +85,9 @@
       </div>
     </div>
 
-    <div class="flex lg:flex-row lg:justify-between flex-col gap-20 mt-32">
+    <div
+      class="flex lg:flex-row lg:justify-between flex-col gap-20 mt-32 mb-16"
+    >
       <div class="lg:w-3/5">
         <h2>Concert Compass</h2>
         <p class="mt-8">
