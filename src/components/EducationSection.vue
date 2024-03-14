@@ -7,7 +7,7 @@
         v-on:click="(iquandoIsOpen = false), (codingIsOpen = !codingIsOpen)"
         class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
-        <div class="flex w-full px-8 text-xl">
+        <div class="flex w-full px-8">
           <span class="w-[40%]">Coding Bootcamp</span>
 
           <span class="w-2/5">@ Coding Bootcamps Europe, remote</span>
@@ -18,23 +18,29 @@
           v-text="codingIsOpen ? '-' : '+'"
         ></div>
       </div>
-      <div v-if="codingIsOpen" class="flex border border-white-2">
+      <div
+        v-if="codingIsOpen"
+        class="flex flex-col justify-between bg-dark-gray rounded-3xl"
+      >
         <div class="w-4/5 p-4">
           <p>During this course I learned the basics of web-development.</p>
-          <div class="flex flex-wrap gap-4 w-[80%] p-4">
-            <p>• HTML</p>
-            <p>• CSS</p>
-            <p>• Responsive design</p>
-            <p>• JavaScript</p>
-            <p>• Vue</p>
-            <p>• Pinia</p>
-            <p>• Implementation of testing (cypress, jest)</p>
-            <p>• Node</p>
-            <p>• Git</p>
+
+          <div class="mx-8">
+            <ul class="list-disc m-4 space-y-4">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Responsive design</li>
+              <li>Javascript</li>
+              <li>Vue</li>
+              <li>Pinia</li>
+              <li>Implemention of testing (Cypress, Jest)</li>
+              <li>Node</li>
+              <li>Git</li>
+            </ul>
           </div>
         </div>
 
-        <div class="w-1/5 justify-center my-auto">
+        <div class="justify-center mx-8 py-8 stroke-shadow">
           <div class="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +68,7 @@
         v-on:click="(iquandoIsOpen = !iquandoIsOpen), (codingIsOpen = false)"
         class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
-        <div class="flex w-full justify-between px-8 text-xl">
+        <div class="flex w-full justify-between px-8">
           <span class="w-2/5">State certified technical engineer</span>
           <span class="w-2/5">@ IQuando GmbH, Germany</span>
           <span class="w-1/5 text-right">2018 - 2020</span>
@@ -72,8 +78,11 @@
           v-text="iquandoIsOpen ? '-' : '+'"
         ></div>
       </div>
-      <div v-if="iquandoIsOpen" class="flex border border-white-2">
-        <div class="flex flex-wrap gap-4 w-4/5 p-4">
+      <div
+        v-if="iquandoIsOpen"
+        class="flex flex-col justify-between bg-dark-gray rounded-3xl"
+      >
+        <!-- <div class="flex flex-wrap gap-4 w-4/5 p-4">
           <p>• Project management</p>
           <p>• Initiate and implement suitable quality-assurance measures</p>
           <p>• Market- and customer-oriented completion of management tasks</p>
@@ -84,9 +93,26 @@
           <p>
             • Market and customer oriented implementation of new technologies
           </p>
+        </div> -->
+        <div class="mx-8">
+          <ul class="list-disc m-4 space-y-4">
+            <li>Project management</li>
+            <li>Initiate and implement suitable quality-assurance measures</li>
+            <li>
+              Market- and customer-oriented completion of management tasks
+            </li>
+            <li>
+              Demonstrate ethical, economic and ecological awareness within the
+              context of sustainable developmentt
+            </li>
+            <li>
+              VueMarket and customer oriented implementation of new
+              technologiesPinia
+            </li>
+          </ul>
         </div>
 
-        <div class="w-1/5 justify-center my-auto">
+        <div class="justify-center mx-8 py-8 stroke-shadow">
           <div class="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

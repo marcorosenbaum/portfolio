@@ -1,5 +1,5 @@
 <template>
-  <section id="experience-section" class="px-16">
+  <section id="experience-section" class="px-16 text-xl lg:text-2xl">
     <h1 class="heading z-50 pt-32">Experience</h1>
 
     <div class="flex flex-col gap-12 mt-16">
@@ -11,10 +11,10 @@
         "
         class="rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
-        <div class="flex w-full justify-between px-8 text-xl">
+        <div class="flex w-full justify-between px-8">
           <span class="w-2/5">Team leader - Installation</span>
 
-          <span class="w-2/5">@ Future Energy, New Zealand</span>
+          <span class="w-2/5">@ Future Energy, New&nbsp;Zealand</span>
           <span class="w-1/5 text-right">2022</span>
         </div>
         <div
@@ -23,19 +23,20 @@
         ></div>
       </div>
 
-      <div v-if="futureIsOpen" class="flex bg-dark-gray rounded-3xl">
-        <div class="flex flex-wrap gap-4 w-4/5 p-4">
-          <p>• Supervising employees on site</p>
-          <p>• Installation of commercial and residential solar PV systems</p>
-          <p>
-            • Installation of energy usage and solar generation monitoring
-            equipment
-          </p>
-          <p>• Debugging of electronic systems</p>
-          <p>• Site inspections</p>
+      <div
+        v-if="futureIsOpen"
+        class="flex flex-col justify-between bg-dark-gray rounded-3xl"
+      >
+        <div class="mx-8">
+          <ul class="list-disc m-4 space-y-4">
+            <li>Supervising employees on site</li>
+            <li>Installation of commercial and residential solar PV systems</li>
+            <li>Debugging of electronic systems</li>
+            <li>Site inspections</li>
+          </ul>
         </div>
 
-        <div class="w-1/5 justify-center my-auto stroke-shadow">
+        <div class="justify-center mx-8 py-8 stroke-shadow">
           <div class="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +68,7 @@
         "
         class="rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
-        <div class="flex w-full justify-between px-8 text-xl">
+        <div class="flex w-full justify-between px-8">
           <span class="w-2/5">Travel</span>
           <span class="w-2/5">@ planet earth</span>
           <span class="w-1/5 text-right">2021 - 2023</span>
@@ -77,14 +78,17 @@
           v-text="travelIsOpen ? '-' : '+'"
         ></div>
       </div>
-      <div v-if="travelIsOpen" class="p-4 flex flex-col border border-white-2">
-        <p>
+      <div
+        v-if="travelIsOpen"
+        class="flex flex-col justify-between bg-dark-gray rounded-3xl"
+      >
+        <p class="p-8">
           During this time I developed a great sense to organize myself in
           stressful situations and increased my capability to communicate
           fluently in english. The opportunity to live and work in New Zealand
           was a very insightful and knowledgable experience.
         </p>
-        <div>
+        <!-- <div>
           <p class="mt-4">Countries I visited:</p>
           <div class="flex flex-wrap gap-4">
             <p>• Belgium</p>
@@ -96,6 +100,19 @@
             <p>• Rarotonga</p>
             <p>• Thailand</p>
           </div>
+        </div> -->
+        <p class="px-8 underline">Countries I visited:</p>
+        <div class="mx-8">
+          <ul class="list-disc m-4 space-y-4">
+            <li>Belgium</li>
+            <li>France</li>
+            <li>Spain</li>
+            <li>Indonesia</li>
+            <li>Australia</li>
+            <li>New Zealand</li>
+            <li>Rarotonga</li>
+            <li>Thailand</li>
+          </ul>
         </div>
       </div>
 
@@ -107,7 +124,7 @@
         "
         class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
-        <div class="flex w-full justify-between px-8 text-xl">
+        <div class="flex w-full justify-between px-8">
           <span class="w-2/5">Team leader, technician</span>
           <span class="w-2/5">@ Eurogate, Germany</span>
           <span class="w-1/5 text-right">2012 - 2021</span>
@@ -117,15 +134,20 @@
           v-text="teamLeadEgtsIsOpen ? '-' : '+'"
         ></div>
       </div>
-      <div v-if="teamLeadEgtsIsOpen" class="flex border border-white-2">
-        <div class="flex flex-wrap gap-4 w-4/5 p-4">
-          <p>• Supervising employees in different projects</p>
-          <p>• Debugging of equipment during operation</p>
-          <p>• Execution of maintenance and repairs</p>
-          <p>• Analysing systems and equipment and planning upgrades</p>
-          <p>• Monitoring costs and appointments in projects</p>
+      <div
+        v-if="teamLeadEgtsIsOpen"
+        class="flex flex-col justify-between bg-dark-gray rounded-3xl"
+      >
+        <div class="mx-8">
+          <ul class="list-disc m-4 space-y-4">
+            <li>Supervising employees in different projects</li>
+            <li>Debugging of equipment during operation</li>
+            <li>Execution of maintenance and repairs</li>
+            <li>Analysing systems and equipment and planning upgrades</li>
+            <li>Monitoring costs and appointments in projects</li>
+          </ul>
         </div>
-        <div class="w-1/5 justify-center my-auto stroke-shadow">
+        <div class="justify-center mx-8 py-8 stroke-shadow">
           <div class="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
