@@ -8,7 +8,7 @@
       </h1>
 
       <img
-        class="xl:absolute top-[12rem] right-16 h-[33.5rem] mt-16"
+        class="xl:absolute top-[8rem] right-16 h-[35rem] mt-16"
         src="@/assets/images/photo-marco.png
           "
         alt="photo of marco"
@@ -20,8 +20,8 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="5rem"
-            height="5rem"
+            width="4rem"
+            height="4rem"
             viewBox="0 0 48 48"
             style="fill: currentColor"
           >
@@ -63,8 +63,8 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="5rem"
-            height="5rem"
+            width="4rem"
+            height="4rem"
             viewBox="0,0,256,256"
             style="fill: currentColor"
           >
@@ -104,8 +104,8 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="5rem"
-            height="5rem"
+            width="4rem"
+            height="4rem"
             viewBox="0 0 16 16"
             style="fill: currentColor"
           >

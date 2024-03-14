@@ -16,12 +16,12 @@
         </div>
       </div>
       <h2 class="mt-16">Flashcards</h2>
-      <p class="mt-8">
+      <p class="mt-8 lg:w-3/5">
         A simple Flashcard website, where you can save flashcards. A chart
         displays the amount of created cards as a visual representation of all
         the knowledge you've accumulated.
       </p>
-      <div class="flex justify-center gap-20 mt-16">
+      <div class="flex gap-20 mt-16">
         <div class="flex gap-2 items-center stroke-shadow w-fit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
           api and pinia to store selected concerts in the localstorage.
         </p>
 
-        <div class="flex justify-center gap-20 mt-16">
+        <div class="flex gap-20 mt-16">
           <div class="flex gap-2 items-center stroke-shadow w-fit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
