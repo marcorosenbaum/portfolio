@@ -5,8 +5,8 @@
         <h1 class="">About me</h1>
         <p class="mt-8">
           I am driven by the belief that continuous learning is the key to
-          mastery.<br />Every day, I dedicate myself to improve my skills and
-          pushing the boundaries of what I can achieve as a developer.
+          mastery.<br /><br />Every day, I dedicate myself to improve my skills
+          and pushing the boundaries of what I can achieve as a developer.
         </p>
       </div>
       <div class="py-32">
