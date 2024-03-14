@@ -18,12 +18,12 @@
           <span class="w-1/5 text-right">2022</span>
         </div>
         <div
-          class="text-2xl px-8 transition-transform hover:scale-150 duration-300 cursor-pointer"
+          class="text-2xl px-8 my-auto"
           v-text="futureIsOpen ? '-' : '+'"
         ></div>
       </div>
 
-      <div v-if="futureIsOpen" class="flex border border-white-2">
+      <div v-if="futureIsOpen" class="flex bg-dark-gray rounded-3xl">
         <div class="flex flex-wrap gap-4 w-4/5 p-4">
           <p>• Supervising employees on site</p>
           <p>• Installation of commercial and residential solar PV systems</p>

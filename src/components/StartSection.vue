@@ -3,16 +3,18 @@
     <div class="mx-14">
       <h1 class="text-white pt-[10rem]">I'm Marco,<br />a Web Developer.</h1>
 
-      <h1 class="pt-16 max-w-[74%]">Turning Vision into Reality with Code.</h1>
+      <h1 class="pt-16 xl:max-w-[74%]">
+        Turning Vision into Reality with Code.
+      </h1>
 
       <img
-        class="absolute top-[12rem] right-16 h-[33.5rem]"
+        class="xl:absolute top-[12rem] right-16 h-[33.5rem] mt-16"
         src="@/assets/images/photo-marco.png
           "
         alt="photo of marco"
       />
 
-      <div class="flex pt-[9rem] gap-8">
+      <div class="flex xl:py-[9rem] py-[5rem] gap-8">
         <div class="flex items-center gap-5 stroke-shadow">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -137,6 +139,5 @@ export default {
   background-image: url("@/assets/images/code-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 </style>

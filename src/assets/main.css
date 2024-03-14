@@ -34,3 +34,21 @@ h2 {
   color: rgb(0, 251, 213);
   font-size: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  html {
+    font-size: 8px;
+  }
+}

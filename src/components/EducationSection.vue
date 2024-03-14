@@ -1,6 +1,6 @@
 <template>
-  <section id="education-section" class="px-16 h-[100vh]">
-    <h1 class="heading z-50 pt-32">Education</h1>
+  <section id="education-section" class="px-16 py-32">
+    <h1 class="heading z-50">Education</h1>
 
     <div class="flex flex-col gap-12 mt-16">
       <div

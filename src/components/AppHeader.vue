@@ -6,7 +6,7 @@
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
       <a href="#about-section">
-        <user-icon id="user-icon" size="36" />
+        <user-icon id="user-icon" size="2rem" />
 
         <label
           for="user-icon"
@@ -17,27 +17,13 @@
       </a>
     </div>
 
-    <!-- <div
-      @mouseover="show_skills_text = true"
-      @mouseleave="show_skills_text = false"
-      class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
-    >
-      <lightbulb-icon id="lightbulb-icon" size="36" />
-      <label
-        for="lightbulb-icon"
-        v-show="show_skills_text"
-        class="absolute top-10"
-        >Skills</label
-      >
-    </div> -->
-
     <div
       @mouseover="show_work_text = true"
       @mouseleave="show_work_text = false"
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
       <a href="#work-section">
-        <notebook-pen-icon id="notebook-pen-icon" size="36" />
+        <notebook-pen-icon id="notebook-pen-icon" size="2rem" />
         <label
           for="notebook-pen-icon"
           v-show="show_work_text"
@@ -53,7 +39,7 @@
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
       <a href="#experience-section">
-        <briefcase-icon id="briefcase-icon" size="36" />
+        <briefcase-icon id="briefcase-icon" size="2rem" />
         <label
           for="briefcase-icon"
           v-show="show_experience_text"
@@ -69,7 +55,7 @@
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
       <a href="#education-section">
-        <graduation-cap-icon id="graduation-cap-icon" size="36" />
+        <graduation-cap-icon id="graduation-cap-icon" size="2rem" />
         <label
           for="graduation-cap-icon"
           v-show="show_education_text"
@@ -85,7 +71,7 @@
       class="flex justify-center rounded-3xl hover:text-lightning stroke-shadow"
     >
       <a href="#contact-section">
-        <mail-icon id="mail-icon" size="36" />
+        <mail-icon id="mail-icon" size="2rem" />
         <label
           for="mail-icon"
           v-show="show_contact_text"
