@@ -77,7 +77,9 @@
             </g>
           </svg>
           <label for="github-icon" class="text-2xl"
-            ><a target="_blank" href="https://github.com/marcorosenbaum"
+            ><a
+              target="_blank"
+              href="https://github.com/marcorosenbaum/flashcards"
               >Github</a
             ></label
           >
@@ -180,54 +182,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="flex gap-8 flex-wrap mt-16">
-      <img
-        id="node-icon"
-        src="@/assets/svgs/nodejs.svg"
-        alt="node icon"
-        class="w-16"
-      />
-
-      <img
-        id="pinia-icon"
-        src="@/assets/svgs/pinia.svg"
-        alt="pinia icon"
-        class="w-16"
-      />
-
-      <img
-        id="tailwind-icon"
-        src="@/assets/svgs/tailwind.svg"
-        alt="css icon"
-        class="w-16"
-      />
-
-      <img
-        id="vue-icon"
-        src="@/assets/svgs/vue.svg"
-        alt="vue icon"
-        class="w-16"
-      />
-
-      <img
-        id="css-icon"
-        src="@/assets/svgs/css3.svg"
-        alt="css icon"
-        class="w-16"
-      />
-      <img
-        id="html5-icon"
-        src="@/assets/svgs/html5.svg"
-        alt="css icon"
-        class="w-16"
-      />
-      <img
-        id="javascript-icon"
-        src="@/assets/svgs/javascript.svg"
-        alt="css icon"
-        class="w-16"
-      />
-    </div> -->
   </section>
 </template>
 
