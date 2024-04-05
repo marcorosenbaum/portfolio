@@ -1,6 +1,5 @@
 <template>
   <main>
-    <app-header />
     <start-section />
     <about-section />
     <work-section />
@@ -11,7 +10,6 @@
 </template>
 
 <script>
-import AppHeader from "@/components/AppHeader.vue";
 import AboutSection from "@/components/AboutSection.vue";
 import StartSection from "@/components/StartSection.vue";
 import WorkSection from "@/components/WorkSection.vue";
@@ -22,7 +20,6 @@ import ContactSection from "@/components/ContactSection.vue";
 export default {
   name: "app",
   components: {
-    AppHeader,
     AboutSection,
     StartSection,
     WorkSection,
