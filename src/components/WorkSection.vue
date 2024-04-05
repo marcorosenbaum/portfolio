@@ -9,10 +9,15 @@
         <div
           class="absolute top-[7%] left-[12%] w-[76%] h-[83%] overflow-auto cursor-pointer"
         >
-          <img
+          <!-- <img
             src="@/assets/images/flashcards.png"
             alt="flashcard website image"
-          />
+          /> -->
+          <iframe
+            src="https://marco-flashcards.netlify.app/"
+            class="w-full h-full"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
       <h2 class="mt-16">Flashcards</h2>
@@ -164,7 +169,7 @@
         </div>
       </div>
 
-      <div class="relative inline-block max-w-[300px] lg:mx-16 mx-auto">
+      <div class="relative inline-block max-w-[400px] lg:mx-16 mx-auto">
         <img
           src="@/assets/images/iphone.png"
           alt="iphone image"
@@ -174,11 +179,16 @@
         <div
           class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] overflow-auto cursor-pointer"
         >
-          <img
+          <!-- <img
             src="@/assets/images/cbe-detail-full.png"
             alt="concert compass website image"
             class="w-full"
-          />
+          /> -->
+          <iframe
+            src="https://cbe-concert-compass.netlify.app/"
+            class="w-full h-full bg-white"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
     </div>
