@@ -9,10 +9,6 @@
         <div
           class="absolute top-[7%] left-[12%] w-[76%] h-[83%] cursor-pointer"
         >
-          <!-- <img
-            src="@/assets/images/flashcards.png"
-            alt="flashcard website image"
-          /> -->
           <iframe
             src="https://marco-flashcards.netlify.app/"
             class="w-full h-full"
@@ -198,26 +194,25 @@
       </div>
     </div>
 
-    <div
-      id="vtg-musli"
-      class="flex flex-col lg:flex-row gap-16 justify-between mt-64 mb-16"
-    >
+    <div id="vtg-musli" class="flex flex-row gap-20 mt-64 mb-16 max-h-[85vh]">
       <div class="inline-block relative">
         <img
           src="@/assets/images/ipad.png"
           alt="laptop image"
-          class="md:h-[85vh]"
+          class="object-contain max-h-[85vh]"
         />
         <!-- Values are calculated manually by the aspect ratio of the image -->
 
-        <iframe
-          src="https://www.vtg-musli.de/"
-          class="w-[92%] h-[94%] bg-white absolute top-[3%] left-[4%]"
-          frameborder="0"
-        ></iframe>
+        <div class="absolute top-[3%] left-[4%] w-[92%] h-[94%] cursor-pointer">
+          <iframe
+            src="https://www.vtg-musli.de/"
+            class="w-full h-full bg-white"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
 
-      <div class="lg:w-[50%]">
+      <div class="">
         <h2>VTG-Musli</h2>
         <p class="mt-8">
           The website of a local car dealer, with focus on responsivness.
@@ -372,7 +367,7 @@
         />
         <!-- Values are calculated manually by the aspect ratio of the image -->
         <div
-          class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] overflow-auto cursor-pointer"
+          class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] cursor-pointer"
         >
           <!-- <img
             src="@/assets/images/cbe-detail-full.png"
