@@ -1,31 +1,35 @@
 <template>
-  <section class="start-section min-h-screen relative">
+  <section class="start-section h-screen object-cover relative">
     <app-header />
     <img
       src="@/assets/images/code-background.png"
       alt="background of code"
-      class="opacity-50 -z-10 absolute top-0 h-screen xl:h-fit w-screen object-cover"
+      class="opacity-50 -z-10 absolute top-0 h-screen w-screen object-cover"
     />
 
-    <div class="mx-14 flex flex-col justify-around h-screen">
-      <div>
-        <h1 class="text-white pt-[5rem] lg:pt-[6rem]">
+    <div
+      class="mx-14 flex flex-col justify-around h-screen landscape:justify-between"
+    >
+      <div class="landscape:w-[70%] xl:landscape:w-[80%]">
+        <h1
+          class="text-white text-7xl xl:text-[5.5rem] pt-10 landscape:pt-[12%]"
+        >
           I'm Marco,<br />a Web Developer.
         </h1>
-
-        <h1 class="pt-16 lg:max-w-[74%]">
+        <h1 class="pt-5 text-7xl xl:text-[5.5rem] landscape:pt-12 xl:w-[90%]">
           Turning Vision into Reality with Code.
         </h1>
       </div>
+
       <img
-        class="xl:absolute top-[8rem] mx-auto w-[85%] xl:w-[40%] right-16 xl:h-[35rem] xl:mt-16 object-contain"
+        class="h-1/2 object-contain landscape:absolute landscape:right-14 landscape:bottom-[12%] landscape:max-w-[45%] landscape:lg:max-w-[65%] landscape:h-[70%]"
         src="@/assets/images/photo-marco.png"
         alt="photo of marco"
       />
 
-      <div class="scale-90 xl:scale-100">
-        <div class="flex gap-8">
-          <div class="flex items-center gap-5 stroke-shadow">
+      <div class="">
+        <div class="flex">
+          <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -67,7 +71,7 @@
             >
           </div>
 
-          <div class="flex items-center gap-5 stroke-shadow">
+          <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
             <svg
               id="github-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +112,7 @@
             >
           </div>
 
-          <div class="flex items-center gap-5 stroke-shadow">
+          <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
             <svg
               id="codewars-icon"
               xmlns="http://www.w3.org/2000/svg"
