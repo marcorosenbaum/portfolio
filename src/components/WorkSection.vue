@@ -235,7 +235,7 @@
               >Website</a
             >
           </div>
-          <div class="flex items-center gap-5 stroke-shadow">
+          <div class="flex items-center gap-5 stroke-shadow duration-200">
             <svg
               id="github-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +294,7 @@
         </p>
 
         <div class="flex gap-20 mt-16">
-          <div class="flex gap-2 items-center stroke-shadow w-fit">
+          <div class="flex gap-2 items-center stroke-shadow duration-200 w-fit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2rem"

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-end gap-10 mt-4 absolute top-0 right-16 z-10">
+  <div class="flex justify-end gap-10 mt-4 absolute top-0 right-20 z-10">
     <div
       @mouseover="show_about_text = true"
       @mouseleave="show_about_text = false"
