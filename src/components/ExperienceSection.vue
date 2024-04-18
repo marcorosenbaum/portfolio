@@ -9,7 +9,7 @@
             (futureIsOpen = !futureIsOpen),
             (travelIsOpen = false)
         "
-        class="rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
+        class="duration-200 rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
         <div class="flex w-full justify-between px-8">
           <span class="w-2/5">Team leader - Installation</span>
@@ -66,7 +66,7 @@
             (futureIsOpen = false),
             (travelIsOpen = !travelIsOpen)
         "
-        class="rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
+        class="duration-200 rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4 bg-dark-gray"
       >
         <div class="flex w-full justify-between px-8">
           <span class="w-2/5">Travel</span>
@@ -78,6 +78,7 @@
           v-text="travelIsOpen ? '-' : '+'"
         ></div>
       </div>
+
       <div
         v-if="travelIsOpen"
         class="flex flex-col justify-between bg-dark-gray rounded-3xl"
@@ -88,19 +89,7 @@
           fluently in english. The opportunity to live and work in New Zealand
           was a very insightful and knowledgable experience.
         </p>
-        <!-- <div>
-          <p class="mt-4">Countries I visited:</p>
-          <div class="flex flex-wrap gap-4">
-            <p>• Belgium</p>
-            <p>• France</p>
-            <p>• Spain</p>
-            <p>• Indonesia</p>
-            <p>• Australia</p>
-            <p>• New Zealand</p>
-            <p>• Rarotonga</p>
-            <p>• Thailand</p>
-          </div>
-        </div> -->
+
         <p class="px-8 underline">Countries I visited:</p>
         <div class="mx-8">
           <ul class="list-disc m-4 space-y-4">
@@ -122,7 +111,7 @@
             (futureIsOpen = false),
             (travelIsOpen = false)
         "
-        class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
+        class="bg-dark-gray rounded-fully border-2 border-transparent duration-200 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full justify-between px-8">
           <span class="w-2/5">Team leader, technician</span>

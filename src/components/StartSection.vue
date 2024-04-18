@@ -1,8 +1,9 @@
 <template>
   <section class="start-section h-screen object-cover relative">
     <app-header />
-    <img
-      src="@/assets/images/code-background.png"
+
+    <v-lazy-image
+      :src="codeBgImage"
       alt="background of code"
       class="opacity-50 -z-10 absolute top-0 h-screen w-screen object-cover"
     />
@@ -21,9 +22,9 @@
         </h1>
       </div>
 
-      <img
+      <v-lazy-image
         class="h-1/2 object-contain landscape:absolute landscape:right-14 landscape:bottom-[12%] landscape:max-w-[45%] landscape:lg:max-w-[65%] landscape:h-[70%]"
-        src="@/assets/images/photo-marco.png"
+        :src="photoOfMarco"
         alt="photo of marco"
       />
 
@@ -143,8 +144,31 @@
 
 <script>
 import AppHeader from "@/components/AppHeader.vue";
+
+import codeBackground from "@/assets/images/code-background.png";
+import photoMarco from "@/assets/images/photo-marco.png";
+
+import VLazyImage from "v-lazy-image";
+
 export default {
   name: "StartSection",
-  components: { AppHeader },
+  components: { AppHeader, VLazyImage },
+  data() {
+    return {
+      codeBgImage: codeBackground,
+      photoOfMarco: photoMarco,
+    };
+  },
 };
 </script>
+
+<style scoped>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>

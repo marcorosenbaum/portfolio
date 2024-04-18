@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "lucide-vue-next": "^0.353.0",
+    "tailwindcss-animations": "^2.0.0",
+    "v-lazy-image": "^2.1.1",
     "vue": "^3.4.15"
   },
   "devDependencies": {

@@ -5,7 +5,7 @@
     <div class="flex flex-col gap-12 mt-16">
       <div
         v-on:click="(iquandoIsOpen = false), (codingIsOpen = !codingIsOpen)"
-        class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
+        class="bg-dark-gray rounded-fully border-2 border-transparent duration-200 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full px-8">
           <span class="w-[40%]">Coding Bootcamp</span>
@@ -66,7 +66,7 @@
 
       <div
         v-on:click="(iquandoIsOpen = !iquandoIsOpen), (codingIsOpen = false)"
-        class="bg-dark-gray rounded-fully border-2 border-transparent hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
+        class="bg-dark-gray rounded-fully border-2 border-transparent duration-200 hover:border-lighting hover:shadow-around2 cursor-pointer flex justify-between py-4"
       >
         <div class="flex w-full justify-between px-8">
           <span class="w-2/5">State certified technical engineer</span>
@@ -82,18 +82,6 @@
         v-if="iquandoIsOpen"
         class="flex flex-col justify-between bg-dark-gray rounded-3xl"
       >
-        <!-- <div class="flex flex-wrap gap-4 w-4/5 p-4">
-          <p>• Project management</p>
-          <p>• Initiate and implement suitable quality-assurance measures</p>
-          <p>• Market- and customer-oriented completion of management tasks</p>
-          <p>
-            • Demonstrate ethical, economic and ecological awareness within the
-            context of sustainable development
-          </p>
-          <p>
-            • Market and customer oriented implementation of new technologies
-          </p>
-        </div> -->
         <div class="mx-8">
           <ul class="list-disc m-4 space-y-4">
             <li>Project management</li>
