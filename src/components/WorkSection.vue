@@ -193,26 +193,24 @@
         </div>
       </div>
     </div>
-
-    <div id="vtg-musli" class="flex flex-row gap-20 mt-64 mb-16 max-h-[85vh]">
-      <div class="inline-block relative">
+    <!-- VTG MUSLI -->
+    <div id="vtg-musli" class="flex flex-col lg:flex-row gap-20 mt-64 mb-16">
+      <!-- VTG BILD -->
+      <div class="relative w-fit mx-auto lg:ml-0">
         <img
           src="@/assets/images/ipad.png"
-          alt="laptop image"
-          class="object-contain max-h-[85vh]"
+          class="max-h-[85vh]"
+          alt="ipad image"
         />
-        <!-- Values are calculated manually by the aspect ratio of the image -->
-
-        <div class="absolute top-[3%] left-[4%] w-[92%] h-[94%] cursor-pointer">
-          <iframe
-            src="https://www.vtg-musli.de/"
-            class="w-full h-full bg-white"
-            frameborder="0"
-          ></iframe>
-        </div>
+        <iframe
+          src=" https://www.vtg-musli.de/"
+          class="absolute top-[3%] left-[4%] w-[92%] h-[94%] bg-white cursor-pointer"
+          frameborder="0"
+        ></iframe>
       </div>
 
-      <div class="">
+      <!-- VTG TEXT -->
+      <div class="lg:w-2/5">
         <h2>VTG-Musli</h2>
         <p class="mt-8">
           The website of a local car dealer, with focus on responsivness.
@@ -281,10 +279,12 @@
       </div>
     </div>
 
+    <!-- CONCERT COMPASS -->
     <div
       id="concert-compass"
       class="flex lg:flex-row lg:justify-between flex-col gap-20 mt-64 mb-16"
     >
+      <!-- Concert Compass TEXT -->
       <div class="lg:w-3/5">
         <h2>Concert Compass</h2>
         <p class="mt-8">
@@ -359,27 +359,18 @@
         </div>
       </div>
 
-      <div class="relative inline-block max-w-[400px] lg:mx-16 mx-auto">
+      <!-- BILD -->
+      <div class="relative w-fit mx-auto">
         <img
           src="@/assets/images/iphone.png"
-          alt="iphone image"
-          class="w-full h-[85vh]"
+          class="max-h-[85vh]"
+          alt="ipad image"
         />
-        <!-- Values are calculated manually by the aspect ratio of the image -->
-        <div
-          class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] cursor-pointer"
-        >
-          <!-- <img
-            src="@/assets/images/cbe-detail-full.png"
-            alt="concert compass website image"
-            class="w-full"
-          /> -->
-          <iframe
-            src="https://cbe-concert-compass.netlify.app/"
-            class="w-full h-full bg-white"
-            frameborder="0"
-          ></iframe>
-        </div>
+        <iframe
+          src="https://cbe-concert-compass.netlify.app/"
+          class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] cursor-pointer bg-white"
+          frameborder="0"
+        ></iframe>
       </div>
     </div>
   </section>
