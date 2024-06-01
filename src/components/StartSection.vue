@@ -13,16 +13,21 @@
     >
       <div class="landscape:w-[70%] xl:landscape:w-[80%]">
         <h1
+          id="text-marco"
           class="text-white text-7xl xl:text-[5.5rem] pt-10 landscape:pt-[12%]"
         >
           I'm Marco,<br />a Web Developer.
         </h1>
-        <h1 class="pt-5 text-7xl xl:text-[5.5rem] landscape:pt-12 xl:w-[90%]">
+        <h1
+          id="text-vision"
+          class="pt-5 text-7xl xl:text-[5.5rem] landscape:pt-12 xl:w-[90%]"
+        >
           Turning Vision into Reality with Code.
         </h1>
       </div>
 
       <v-lazy-image
+        id="photo-of-marco"
         class="h-1/2 object-contain landscape:absolute landscape:right-14 landscape:bottom-[12%] landscape:max-w-[45%] landscape:lg:max-w-[65%] landscape:h-[70%]"
         :src="photoOfMarco"
         alt="photo of marco"
@@ -170,5 +175,28 @@ export default {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#text-marco {
+  animation: slideIn 3s;
+  animation-timing-function: ease-in 2s;
+}
+
+#text-vision {
+  animation: slideIn 4s;
+  animation-timing-function: ease-in 4s;
+}
+
+#photo-of-marco {
+  animation: fadeIn 4s;
 }
 </style>

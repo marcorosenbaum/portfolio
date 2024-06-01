@@ -213,7 +213,7 @@
       <div class="lg:w-2/5">
         <h2>VTG-Musli</h2>
         <p class="mt-8">
-          The website of a local car dealer, with focus on responsivness.
+          The website of a local car dealer, with focus on responsivity.
         </p>
         <div class="flex gap-20 mt-16">
           <div class="flex gap-2 items-center stroke-shadow w-fit">
