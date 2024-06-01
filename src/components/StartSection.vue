@@ -197,6 +197,6 @@ export default {
 }
 
 #photo-of-marco {
-  animation: fadeIn 4s;
+  animation: fadeIn 2s ease-in;
 }
 </style>
