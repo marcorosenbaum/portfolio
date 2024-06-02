@@ -91,11 +91,10 @@
             </li>
             <li>
               Demonstrate ethical, economic and ecological awareness within the
-              context of sustainable developmentt
+              context of sustainable development
             </li>
             <li>
-              VueMarket and customer oriented implementation of new
-              technologiesPinia
+              Market and customer oriented implementation of new technologies
             </li>
           </ul>
         </div>
