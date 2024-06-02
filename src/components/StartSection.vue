@@ -33,7 +33,7 @@
         alt="photo of marco"
       />
 
-      <div class="">
+      <div>
         <div class="flex">
           <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
             <svg
