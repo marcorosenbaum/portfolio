@@ -484,6 +484,15 @@ export default {
 </script>
 
 <style scoped>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -502,27 +511,23 @@ export default {
   }
 }
 
-.text-flashcards {
-  animation: slideInFromRight linear;
-  animation-timeline: view(90% 0%);
-}
-
-.text-music {
-  animation: slideInFromRight linear;
-  animation-timeline: view(90% 0%);
-}
-
 .text-memory-game,
+.text-flashcards,
+.text-music,
 .text-vtg,
+.text-concert {
+  animation: fadeIn linear;
+  animation-timeline: view(60% 0%);
+}
+
 .iphone-concert {
-  animation: slideInFromRight linear;
+  animation: slideInFromRight linear, fadeIn linear;
   animation-timeline: view(100% 0%);
 }
 
 .ipad-memory-game,
-.ipad-vtg,
-.text-concert {
-  animation: slideInFromLeft linear;
+.ipad-vtg {
+  animation: slideInFromLeft linear, fadeIn linear;
   animation-timeline: view(100% 0%);
 }
 </style>
