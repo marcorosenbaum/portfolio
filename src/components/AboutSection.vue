@@ -66,7 +66,7 @@
             alt="react icon"
             class="h-[80px] w-[80px]"
           />
-          <label for="react-icon">React</label>
+          <label class="pl-2" for="react-icon">React</label>
         </div>
         <div class="flex justify-center items-center rounded-fully py-2 px-6">
           <img
@@ -108,15 +108,14 @@
           <label for="css-icon">Javascript</label>
         </div>
 
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
+        <div class="flex justify-center items-center py-2 px-6">
           <img
-            class="bg-white rounded-fully border-2 border-black shadow-inner shadow-black"
             id="next-icon"
             src="@/assets/svgs/next-js.png"
             alt="next icon"
             width="80"
           />
-          <label for="next-icon"> Next</label>
+          <label class="pl-2" for="next-icon"> Next</label>
         </div>
         <div class="flex justify-center items-center rounded-fully py-2 px-6">
           <img
@@ -125,7 +124,7 @@
             alt="mongodb icon"
             width="80"
           />
-          <label for="next-icon"> MongoDB</label>
+          <label class="pl-2" for="next-icon"> MongoDB</label>
         </div>
       </div>
     </div>
@@ -162,13 +161,22 @@ export default {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .skills {
-  animation: slideInFromLeft linear;
-  animation-timeline: view(90% 0%);
+  animation: fadeIn linear;
+  animation-timeline: view(60% 0%);
 }
 
 #text-about {
-  animation: slideInFromRight linear;
-  animation-timeline: view(90% 0%);
+  animation: fadeIn linear;
+  animation-timeline: view(60% 0%);
 }
 </style>
