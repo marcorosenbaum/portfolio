@@ -17,123 +17,17 @@
 
     <div class="py-32 px-16">
       <h1 class="pb-8">Skills</h1>
-
-      <div class="flex flex-wrap gap-4 justify-around skills">
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="node-icon"
-            src="@/assets/svgs/nodejs.svg"
-            alt="node icon"
-            width="80"
-          />
-          <label for="node-icon">Node</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="pinia-icon"
-            src="@/assets/svgs/pinia.svg"
-            alt="pinia icon"
-            height="80px"
-          />
-          <label for="pinia-icon">Pinia</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="tailwind-icon"
-            src="@/assets/svgs/tailwind.svg"
-            alt="css icon"
-            width="80"
-          />
-          <label for="tailwind-icon">Tailwind</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="vue-icon"
-            src="@/assets/svgs/vue.svg"
-            alt="vue icon"
-            width="80"
-          />
-          <label for="vue-icon">Vue</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="react-icon"
-            src="@/assets/svgs/react.png"
-            alt="react icon"
-            class="h-[80px] w-[80px]"
-          />
-          <label class="pl-2" for="react-icon">React</label>
-        </div>
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="css-icon"
-            src="@/assets/svgs/css3.svg"
-            alt="css icon"
-            width="80"
-          />
-          <label for="css-icon">CSS</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="firebase-icon"
-            src="@/assets/svgs/firebase.svg"
-            alt="css icon"
-            width="80"
-          />
-          <label for="css-icon">Firebase</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="html5-icon"
-            src="@/assets/svgs/html5.svg"
-            alt="css icon"
-            width="80"
-          />
-          <label for="css-icon">HTML</label>
-        </div>
-
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="javascript-icon"
-            src="@/assets/svgs/javascript.svg"
-            alt="css icon"
-            width="80"
-          />
-          <label for="css-icon">Javascript</label>
-        </div>
-
-        <div class="flex justify-center items-center py-2 px-6">
-          <img
-            id="next-icon"
-            src="@/assets/svgs/next-js.png"
-            alt="next icon"
-            width="80"
-          />
-          <label class="pl-2" for="next-icon"> Next</label>
-        </div>
-        <div class="flex justify-center items-center rounded-fully py-2 px-6">
-          <img
-            id="mongodb-icon"
-            src="@/assets/svgs/mongodb.png"
-            alt="mongodb icon"
-            width="80"
-          />
-          <label class="pl-2" for="next-icon"> MongoDB</label>
-        </div>
-      </div>
+      <SkillsSection id="skills-section" />
     </div>
   </section>
 </template>
 
 <script>
+import SkillsSection from "./SkillsSection.vue";
+
 export default {
   name: "AboutSection",
+  components: { SkillsSection },
 };
 </script>
 
@@ -170,13 +64,9 @@ export default {
   }
 }
 
-.skills {
+#text-about,
+#skills-section {
   animation: fadeIn linear;
-  animation-timeline: view(60% 0%);
-}
-
-#text-about {
-  animation: fadeIn linear;
-  animation-timeline: view(60% 0%);
+  animation-timeline: view(70% 0%);
 }
 </style>

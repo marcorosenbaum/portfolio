@@ -76,8 +76,9 @@
               ></label
             >
           </div>
+          <GithubLink size="4rem" link="https://github.com/marcorosenbaum" />
 
-          <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
+          <!-- <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
             <svg
               id="github-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +117,7 @@
                 >Github</a
               ></label
             >
-          </div>
+          </div> -->
 
           <div class="flex items-center gap-5 stroke-shadow w-1/3 p-2">
             <svg
@@ -154,10 +155,11 @@ import codeBackground from "@/assets/images/code-background.png";
 import photoMarco from "@/assets/images/photo-marco.png";
 
 import VLazyImage from "v-lazy-image";
+import GithubLink from "@/components/GithubLink.vue";
 
 export default {
   name: "StartSection",
-  components: { AppHeader, VLazyImage },
+  components: { AppHeader, VLazyImage, GithubLink },
   data() {
     return {
       codeBgImage: codeBackground,

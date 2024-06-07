@@ -1,87 +1,80 @@
 <template>
-  <h1>Skills</h1>
-  <div class="flex gap-4">
-    <div class="flex flex-col gap-2">
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
-        <img
-          id="css-icon"
-          src="@/assets/svgs/css3.svg"
-          alt="css icon"
-          width="80"
-        />
-        <label for="css-icon">CSS</label>
-      </div>
-
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
-        <img
-          id="firebase-icon"
-          src="@/assets/svgs/firebase.svg"
-          alt="css icon"
-          width="80"
-        />
-        <label for="css-icon">Firebase</label>
-      </div>
-
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
-        <img
-          id="html5-icon"
-          src="@/assets/svgs/html5.svg"
-          alt="css icon"
-          width="80"
-        />
-        <label for="css-icon">HTML</label>
-      </div>
-
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
+  <div>
+    <div className="logos ">
+      <div className="logos-slide ">
+        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="css icon" />
         <img
           id="javascript-icon"
           src="@/assets/svgs/javascript.svg"
           alt="css icon"
-          width="80"
         />
-        <label for="css-icon">Javascript</label>
-      </div>
-    </div>
 
-    <div class="flex flex-col gap-2">
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
         <img
-          id="node-icon"
-          src="@/assets/svgs/nodejs.svg"
-          alt="node icon"
-          width="80"
+          id="firebase-icon"
+          src="@/assets/svgs/firebase.svg"
+          alt="css icon"
         />
-        <label for="node-icon">Node</label>
-      </div>
-
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
-        <img
-          id="pinia-icon"
-          src="@/assets/svgs/pinia.svg"
-          alt="pinia icon"
-          height="80px"
-        />
-        <label for="pinia-icon">Pinia</label>
-      </div>
-
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
+        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="css icon" />
+        <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
         <img
           id="tailwind-icon"
           src="@/assets/svgs/tailwind.svg"
-          alt="css icon"
-          width="80"
+          alt="tailwind icon"
         />
-        <label for="tailwind-icon">Tailwind</label>
-      </div>
 
-      <div class="flex items-center bg-gray-900 rounded-fully py-2 px-6">
         <img
           id="vue-icon"
           src="@/assets/svgs/vue.svg"
-          alt="vue icon"
-          width="80"
+          alt="vue"
+          tooltip="Vue"
         />
-        <label for="vue-icon">Vue</label>
+        <img id="react-icon" src="@/assets/svgs/react.png" alt="react" />
+
+        <img id="css-icon" src="@/assets/svgs/css3.svg" alt="css" />
+
+        <img
+          id="mongodb-icon"
+          src="@/assets/svgs/mongodb.png"
+          alt="mongodb
+        icon"
+        />
+
+        <img id="nextjs-icon" src="@/assets/svgs/next-js.png" alt="next js" />
+      </div>
+      <div className="logos-slide">
+        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="css icon" />
+        <img
+          onmouseover=""
+          id="javascript-icon"
+          src="@/assets/svgs/javascript.svg"
+          alt="css icon"
+        />
+
+        <img
+          id="firebase-icon"
+          src="@/assets/svgs/firebase.svg"
+          alt="css icon"
+        />
+        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="css icon" />
+        <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
+        <img
+          id="tailwind-icon"
+          src="@/assets/svgs/tailwind.svg"
+          alt="tailwind icon"
+        />
+
+        <img id="vue-icon" src="@/assets/svgs/vue.svg" alt="vue icon" />
+        <img id="react-icon" src="@/assets/svgs/react.png" alt="react icon" />
+
+        <img id="css-icon" src="@/assets/svgs/css3.svg" alt="css icon" />
+
+        <img
+          id="mongodb-icon"
+          src="@/assets/svgs/mongodb.png"
+          alt="mongodb
+        icon"
+        />
+        <img id="nextjs-icon" src="@/assets/svgs/next-js.png" alt="next js" />
       </div>
     </div>
   </div>
@@ -90,7 +83,68 @@
 <script>
 export default {
   name: "SkillsSection",
+
+  mounted() {
+    const mongodbIcon = document.getElementById("mongodb-icon");
+    const xPosition = mongodbIcon.getBoundingClientRect().x;
+    console.log("Current x position:", xPosition);
+  },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  margin: 0 auto;
+  height: auto;
+  border-radius: 2rem;
+  padding: 2rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #262f38;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 20%;
+  z-index: 2;
+}
+
+.logos:after {
+  left: 0;
+  background: linear-gradient(to right, #262f38, #262f3800);
+}
+
+.logos:before {
+  right: 0;
+  background: linear-gradient(to left, #262f38, #262f3800);
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 10s linear infinite;
+}
+
+.logos-slide img {
+  margin: 0 1.5vw;
+  width: 5vw;
+  display: inline-block;
+  min-width: 4rem;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+</style>
