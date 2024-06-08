@@ -2,19 +2,19 @@
   <div>
     <div className="logos ">
       <div className="logos-slide ">
-        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="css icon" />
+        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="html icon" />
         <img
           id="javascript-icon"
           src="@/assets/svgs/javascript.svg"
-          alt="css icon"
+          alt="javascript icon"
         />
 
         <img
           id="firebase-icon"
           src="@/assets/svgs/firebase.svg"
-          alt="css icon"
+          alt="firebase icon"
         />
-        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="css icon" />
+        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="node icon" />
         <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
         <img
           id="tailwind-icon"
@@ -42,20 +42,20 @@
         <img id="nextjs-icon" src="@/assets/svgs/next-js.png" alt="next js" />
       </div>
       <div className="logos-slide">
-        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="css icon" />
+        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="html icon" />
         <img
           onmouseover=""
           id="javascript-icon"
           src="@/assets/svgs/javascript.svg"
-          alt="css icon"
+          alt="javascript icon"
         />
 
         <img
           id="firebase-icon"
           src="@/assets/svgs/firebase.svg"
-          alt="css icon"
+          alt="firebase icon"
         />
-        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="css icon" />
+        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="node icon" />
         <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
         <img
           id="tailwind-icon"
@@ -83,12 +83,6 @@
 <script>
 export default {
   name: "SkillsSection",
-
-  mounted() {
-    const mongodbIcon = document.getElementById("mongodb-icon");
-    const xPosition = mongodbIcon.getBoundingClientRect().x;
-    console.log("Current x position:", xPosition);
-  },
 };
 </script>
 

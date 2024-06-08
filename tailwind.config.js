@@ -15,8 +15,9 @@ export default {
         around2: "0 0 20px 10px rgb(0, 251, 213, 0.3)",
       },
       boxShadow: {
-        bottom: "0 0 4rem 4rem rgb(31, 36,45,1)",
+        section: "0 0 4rem 4rem rgb(31, 36,45,1)",
       },
+
       borderRadius: {
         fully: "10rem",
       },

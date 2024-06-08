@@ -1,11 +1,11 @@
 <template>
   <main>
-    <start-section class="shadow-bottom" />
+    <start-section class="shadow-section" />
     <about-section />
     <work-section />
     <experience-section />
     <education-section />
-    <contact-section />
+    <contact-section class="shadow-section shadow-[rgba(26,28,36,1)]" />
   </main>
 </template>
 
@@ -22,7 +22,6 @@ export default {
   components: {
     AboutSection,
     StartSection,
-
     WorkSection,
     ExperienceSection,
     EducationSection,
@@ -30,5 +29,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
