@@ -1,6 +1,6 @@
 <template>
   <main>
-    <start-section />
+    <start-section class="shadow-bottom" />
     <about-section />
     <work-section />
     <experience-section />
