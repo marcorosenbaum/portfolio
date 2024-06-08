@@ -4,21 +4,7 @@
 
     <!-- FLASHCARDS -->
     <div id="flashcards" class="mt-32">
-      <div class="text-center">
-        <div class="laptop-flashcards relative inline-block lg:w-4/5">
-          <img src="@/assets/images/laptop.png" alt="laptop image" />
-          <!-- Values are calculated manually by the aspect ratio of the image -->
-          <div
-            class="absolute top-[7%] left-[12%] w-[76%] h-[83%] cursor-pointer"
-          >
-            <iframe
-              src="https://marco-flashcards.netlify.app/"
-              class="w-full h-full"
-              frameborder="0"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+      <LaptopMockup iframe="https://marco-flashcards.netlify.app/" />
       <div class="text-flashcards">
         <h2 class="mt-16">Flashcards</h2>
         <div class="mt-8 lg:w-[100%]">
@@ -47,22 +33,9 @@
       </div>
     </div>
 
+    <!-- SWEDISH MEMORY GAME -->
     <div id="memory-game" class="flex flex-col lg:flex-row gap-20 mt-64 mb-16">
-      <!-- MEMORY GAME BILD -->
-      <div class="ipad-memory-game relative w-fit mx-auto lg:ml-0">
-        <img
-          src="@/assets/images/ipad.png"
-          class="max-h-[85vh]"
-          alt="ipad image"
-        />
-        <iframe
-          src="https://swedish-memory-game.vercel.app/"
-          class="absolute top-[3%] left-[4%] w-[92%] h-[94%] bg-white cursor-pointer"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <!-- MEMORY GAME TEXT -->
+      <IpadMockup iframe="https://swedish-memory-game.vercel.app/" />
       <div class="text-memory-game lg:w-2/5">
         <h2>Swedish Memory Game</h2>
         <p class="mt-8">
@@ -88,23 +61,9 @@
       </div>
     </div>
 
-    <!-- MUSIC -->
+    <!-- MUSIC EXAMPLE -->
     <div id="music" class="mt-64">
-      <div class="text-center">
-        <div class="laptop-music relative inline-block lg:w-4/5">
-          <img src="@/assets/images/laptop.png" alt="laptop image" />
-          <!-- Values are calculated manually by the aspect ratio of the image -->
-          <div
-            class="absolute top-[7%] left-[12%] w-[76%] h-[83%] cursor-pointer"
-          >
-            <iframe
-              src="https://marco-music.netlify.app/"
-              class="w-full h-full"
-              frameborder="0"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+      <LaptopMockup iframe="https://marco-music.netlify.app/" />
       <div class="text-music">
         <h2 class="mt-16">Music</h2>
         <div class="mt-8 lg:w-[100%]">
@@ -130,21 +89,7 @@
 
     <!-- VTG MUSLI -->
     <div id="vtg-musli" class="flex flex-col lg:flex-row gap-20 mt-64 mb-16">
-      <!-- VTG BILD -->
-      <div class="ipad-vtg relative w-fit mx-auto lg:ml-0">
-        <img
-          src="@/assets/images/ipad.png"
-          class="max-h-[85vh]"
-          alt="ipad image"
-        />
-        <iframe
-          src=" https://www.vtg-musli.de/"
-          class="absolute top-[3%] left-[4%] w-[92%] h-[94%] bg-white cursor-pointer"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <!-- VTG TEXT -->
+      <IpadMockup iframe="https://www.vtg-musli.de/" />
       <div class="text-vtg lg:w-2/5">
         <h2>VTG-Musli</h2>
         <p class="mt-8">
@@ -162,7 +107,6 @@
       id="concert-compass"
       class="flex lg:flex-row lg:justify-between flex-col gap-20 mt-64 mb-16"
     >
-      <!-- Concert Compass TEXT -->
       <div class="text-concert lg:w-3/5">
         <h2>Concert Compass</h2>
         <p class="mt-8">
@@ -183,19 +127,7 @@
         </div>
       </div>
 
-      <!-- BILD -->
-      <div class="iphone-concert relative w-fit mx-auto">
-        <img
-          src="@/assets/images/iphone.png"
-          class="max-h-[85vh]"
-          alt="ipad image"
-        />
-        <iframe
-          src="https://cbe-concert-compass.netlify.app/"
-          class="absolute top-[9%] left-[6.5%] w-[87.5%] h-[82%] cursor-pointer bg-white"
-          frameborder="0"
-        ></iframe>
-      </div>
+      <IphoneMockup iframe="https://cbe-concert-compass.netlify.app" />
     </div>
   </section>
 </template>
@@ -203,12 +135,18 @@
 <script>
 import GithubLink from "@/components/GithubLink.vue";
 import WebsiteLink from "@/components/WebsiteLink.vue";
+import LaptopMockup from "@/components/LaptopMockup.vue";
+import IpadMockup from "@/components/IpadMockup.vue";
+import IphoneMockup from "@/components/IphoneMockup.vue";
 
 export default {
   name: "WorkSection",
   components: {
     GithubLink,
     WebsiteLink,
+    LaptopMockup,
+    IpadMockup,
+    IphoneMockup,
   },
 };
 </script>
@@ -247,7 +185,7 @@ export default {
 .text-vtg,
 .text-concert {
   animation: fadeIn linear;
-  animation-timeline: view(60% 0%);
+  animation-timeline: view(90% 0%);
 }
 
 .iphone-concert {
