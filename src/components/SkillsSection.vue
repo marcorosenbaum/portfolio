@@ -144,7 +144,9 @@ export default {
   min-width: 4rem;
 }
 
-.logos:hover .logos-slide {
-  animation-play-state: paused;
+@media screen and (min-width: 1044px) {
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
 }
 </style>

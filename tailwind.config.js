@@ -17,6 +17,9 @@ export default {
       borderRadius: {
         fully: "10rem",
       },
+      screens: {
+        lg: "1045px",
+      },
     },
   },
   // plugins: [require("tailwindcss-animations")],
