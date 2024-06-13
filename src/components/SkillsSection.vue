@@ -1,81 +1,68 @@
 <template>
-  <div>
-    <div className="logos ">
-      <div className="logos-slide ">
-        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="html icon" />
-        <img
-          id="javascript-icon"
-          src="@/assets/svgs/javascript.svg"
-          alt="javascript icon"
-        />
+  <div class="img-wrapper flex flex-wrap gap-8">
+    <div class="flex flex-col justify-center">
+      <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="html icon" />
+      <p class="mx-auto">HTML</p>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img
+        id="javascript-icon"
+        src="@/assets/svgs/javascript.svg"
+        alt="javascript icon"
+      />
+      <p class="mx-auto">JavaScript</p>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img
+        id="firebase-icon"
+        src="@/assets/svgs/firebase.svg"
+        alt="firebase icon"
+      />
+      <p class="mx-auto">Firebase</p>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="node icon" />
+      <p class="mx-auto">Node.js</p>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
+      <p class="mx-auto">Pinia</p>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img
+        id="tailwind-icon"
+        src="@/assets/svgs/tailwind.svg"
+        alt="tailwind icon"
+      />
+      <p class="mx-auto">Tailwind CSS</p>
+    </div>
 
-        <img
-          id="firebase-icon"
-          src="@/assets/svgs/firebase.svg"
-          alt="firebase icon"
-        />
-        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="node icon" />
-        <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
-        <img
-          id="tailwind-icon"
-          src="@/assets/svgs/tailwind.svg"
-          alt="tailwind icon"
-        />
+    <div class="flex flex-col justify-between">
+      <img id="vue-icon" src="@/assets/svgs/vue.svg" alt="vue" />
+      <p class="mx-auto">Vue</p>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img id="react-icon" src="@/assets/svgs/react.png" alt="react" />
+      <p class="mx-auto">React</p>
+    </div>
 
-        <img
-          id="vue-icon"
-          src="@/assets/svgs/vue.svg"
-          alt="vue"
-          tooltip="Vue"
-        />
-        <img id="react-icon" src="@/assets/svgs/react.png" alt="react" />
+    <div class="flex flex-col justify-between">
+      <img id="css-icon" src="@/assets/svgs/css3.svg" alt="css" />
+      <p class="mx-auto">CSS</p>
+    </div>
 
-        <img id="css-icon" src="@/assets/svgs/css3.svg" alt="css" />
+    <div class="flex flex-col justify-between">
+      <img
+        id="mongodb-icon"
+        src="@/assets/svgs/mongodb.png"
+        alt="mongodb icon"
+      />
+      <p class="mx-auto">MongoDB</p>
+    </div>
 
-        <img
-          id="mongodb-icon"
-          src="@/assets/svgs/mongodb.png"
-          alt="mongodb
-        icon"
-        />
-
-        <img id="nextjs-icon" src="@/assets/svgs/next-js.png" alt="next js" />
-      </div>
-      <div className="logos-slide">
-        <img id="html5-icon" src="@/assets/svgs/html5.svg" alt="html icon" />
-        <img
-          onmouseover=""
-          id="javascript-icon"
-          src="@/assets/svgs/javascript.svg"
-          alt="javascript icon"
-        />
-
-        <img
-          id="firebase-icon"
-          src="@/assets/svgs/firebase.svg"
-          alt="firebase icon"
-        />
-        <img id="nodejs-icon" src="@/assets/svgs/nodejs.svg" alt="node icon" />
-        <img id="pinia-icon" src="@/assets/svgs/pinia.svg" alt="pinia icon" />
-        <img
-          id="tailwind-icon"
-          src="@/assets/svgs/tailwind.svg"
-          alt="tailwind icon"
-        />
-
-        <img id="vue-icon" src="@/assets/svgs/vue.svg" alt="vue icon" />
-        <img id="react-icon" src="@/assets/svgs/react.png" alt="react icon" />
-
-        <img id="css-icon" src="@/assets/svgs/css3.svg" alt="css icon" />
-
-        <img
-          id="mongodb-icon"
-          src="@/assets/svgs/mongodb.png"
-          alt="mongodb
-        icon"
-        />
-        <img id="nextjs-icon" src="@/assets/svgs/next-js.png" alt="next js" />
-      </div>
+    <div class="flex flex-col justify-between">
+      <img id="nextjs-icon" src="@/assets/svgs/next-js.png" alt="next js" />
+      <p class="mx-auto">Next.js</p>
     </div>
   </div>
 </template>
@@ -83,64 +70,45 @@
 <script>
 export default {
   name: "SkillsSection",
+  mounted() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    });
+
+    this.$el.querySelectorAll(".img-wrapper > div").forEach((div) => {
+      observer.observe(div);
+    });
+  },
 };
 </script>
 
 <style scoped>
-@keyframes slide {
-  0% {
-    transform: translateX(0);
+.img-wrapper div {
+  width: 8rem;
+  height: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #d3d3d399;
+  border-radius: 1rem;
+  color: black;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    opacity: 1;
   }
 }
 
-.logos {
-  margin: 0 auto;
-  height: auto;
-  border-radius: 2rem;
-  padding: 2rem 0;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #262f38;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 20%;
-  z-index: 2;
-}
-
-.logos:after {
-  left: 0;
-  background: linear-gradient(to right, #262f38, #262f3800);
-}
-
-.logos:before {
-  right: 0;
-  background: linear-gradient(to left, #262f38, #262f3800);
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: slide 10s linear infinite;
-}
-
-.logos-slide img {
-  margin: 0 1.5vw;
-  width: 5vw;
-  display: inline-block;
-  min-width: 4rem;
-}
-
-@media screen and (min-width: 1044px) {
-  .logos:hover .logos-slide {
-    animation-play-state: paused;
-  }
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
 }
 </style>

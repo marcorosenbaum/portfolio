@@ -55,8 +55,7 @@ export default {
   }
 }
 
-#text-about,
-#skills-section {
+#text-about {
   animation: fadeIn linear;
   animation-timeline: view(70% 0%);
 }
