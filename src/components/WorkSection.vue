@@ -103,7 +103,7 @@
     </div>
 
     <!-- CONCERT COMPASS -->
-    <div
+    <!-- <div
       id="concert-compass"
       class="flex lg:flex-row lg:justify-between flex-col gap-20 mt-64 mb-16"
     >
@@ -128,7 +128,7 @@
       </div>
 
       <IphoneMockup iframe="https://cbe-concert-compass.netlify.app" />
-    </div>
+    </div> -->
   </section>
 </template>
 
