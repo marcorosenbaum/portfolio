@@ -20,7 +20,7 @@
         </h1>
         <h1
           id="text-vision"
-          class="pt-5 text-7xl xl:text-[5.5rem] landscape:pt-12 xl:w-[90%]"
+          class="pt-5 text-7xl xl:text-[5.5rem] landscape:pt-12 xl:w-[80%]"
         >
           Turning Vision into Reality with Code.
         </h1>
