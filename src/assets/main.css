@@ -59,6 +59,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 2350px) {
+  html {
+    font-size: 1.75rem;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
