@@ -1,17 +1,17 @@
 <template>
   <section id="work-section" class="mx-16 mt-32">
     <h1>My work</h1>
-    <!-- FLASHCARDS -->
+    <!-- OG-Preview -->
     <div id="og-preview" class="mt-32">
-      <div class="text-center">
+      <!-- <div class="text-center">
         <div class="laptop-flashcards relative inline-block lg:w-4/5">
           <img
             src="@/assets/images/laptop.png"
             class="w-full"
             alt="laptop image"
           />
-          <!-- Values are calculated manually by the aspect ratio of the image -->
-          <div
+          Values are calculated manually by the aspect ratio of the image -->
+      <!-- <div
             class="overflow-auto absolute top-[7%] left-[12%] w-[76%] h-[83%]"
           >
             <img
@@ -21,7 +21,8 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
+      <LaptopMockup iframe="https://og-preview.netlify.app/" />
       <div class="text-flashcards">
         <h2 class="mt-16">npm-package og-preview</h2>
         <div class="mt-8 lg:w-[100%]">
@@ -62,6 +63,8 @@
               >npm</a
             >
           </div>
+
+          <WebsiteLink size="3rem" link="https://og-preview.netlify.app" />
 
           <GithubLink
             size="3rem"

@@ -9,8 +9,8 @@
           and pushing the boundaries of what I can achieve as a developer.
           <br /><br />
           Having led teams I understand the importance of communication and the
-          value of a well functioning team. I am a team player and I am always
-          looking for ways to improve the team's performance.
+          value of a well functioning team. I am a team player and prioritize
+          team success over personal archievements.
         </p>
       </div>
     </div>
